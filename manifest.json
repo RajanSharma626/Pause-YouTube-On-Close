@@ -1,14 +1,13 @@
 {
-    "manifest_version": 3,
-    "name": "Pause YouTube on Tab Close",
-    "version": "1.0",
-    "description": "Pauses YouTube video when the tab is closed.",
-    "permissions": ["tabs", "activeTab"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "host_permissions": [
-      "https://www.youtube.com/*"
-    ]
-  }
-  
+  "manifest_version": 3,
+  "name": "Pause YouTube on Tab Close",
+  "version": "1.0",
+  "description": "Pauses YouTube video when the tab is closed and resumes when the tab is reopened.",
+  "permissions": ["tabs", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ]
+}
